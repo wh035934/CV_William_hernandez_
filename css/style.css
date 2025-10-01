@@ -1,0 +1,388 @@
+/* Modo Oscuro */
+#toggleDarkMode,
+#downloadCV {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    font-size: 1.3rem;
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#downloadCV i {
+    pointer-events: none;
+}
+
+body.dark-mode {
+  background: #23272f;
+  color: #e9efff;
+}
+
+body.dark-mode .navbar {
+  background: linear-gradient(90deg, #23272f 0%, #1d6fc0 100%);
+}
+
+body.dark-mode .navbar .nav-link,
+body.dark-mode .navbar .nav-link.active {
+  color: #e9efff !important;
+  background-color: transparent !important;
+}
+
+body.dark-mode .navbar .nav-link:hover {
+  background-color: #1d6fc0 !important;
+  color: #fff !important;
+}
+
+body.dark-mode .seccion-oscura {
+  background-color: #23272f;
+  color: #e9efff;
+}
+
+body.dark-mode .seccion-clara {
+  background-color: #23272f;
+  color: #e9efff;
+}
+
+body.dark-mode .hero {
+    background-color: #23272f;
+    color: #e9efff;
+}
+
+body.dark-mode .hero-principal h2 {
+    color: #b0b8c9;
+}
+/* Barra de Navegacion */
+.navbar{
+    padding: 2rem;
+    background: linear-gradient(90deg, #1d6fc0 0%, #4fc3f7 100%);
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .nav-item{
+    color: #292727 ;
+    transition: background 0.3s, color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.navbar .nav-item:hover{
+    background-color: #fff;
+    color: #1d6fc0;
+}
+
+.navbar .nav-link {
+    color: #292727;
+    transition: background 0.3s, color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    background-color: #fff;
+    color: #1d6fc0 !important;
+}
+
+/* Estilos generales */
+html {
+  scroll-behavior: smooth;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+h1{
+    font-size: 2.5rem;
+    font-family: "Exo", sans-serif;
+}
+.seccion-oscura{
+    color: white;
+    background-color: #1b1b32;
+}
+.seccion-clara{
+    color: black;
+    background-color: #f5f6f7;
+}
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Exo", sans-serif;
+}
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+.seccion-texto p{
+    font-size: 1.2px;
+}
+
+.texto-negro{
+    color: black;
+}
+.texto-blanco{
+    color: white;
+}
+/* Seccion principal */
+.hero{
+     background-color: #f5f6f7;
+     min-height: 450px;
+     text-align: center;
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero-imagen-perfil{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+/* Sobre mi*/
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+}
+.sobre-mi .container{
+    max-width: 600px;
+    text-align: center;   
+}
+
+
+/* experiencia */
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease-in;
+}
+.experiencia .columna:hover{
+    color:  white;
+    background-color: #1b1b32;
+}
+.experiencia i{
+    font-size: 2.5rem;
+    color: #1d6fc0;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badges-contenedor{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badge{
+    margin: 5px;
+}
+
+.experiencia li{
+    text-align: justify;
+}
+
+
+/* proyectos */
+.proyectos{
+    padding: 40px;
+}
+.proyectos img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay{
+    transition: 0.2 ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+.proyecto{
+    position: relative;
+}
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.row p{
+    font-size: 16px;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.proyecto:hover img{
+    opacity: 0.2;
+}
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background: linear-gradient(90deg, #1d6fc0 0%, #4fc3f7 100%);
+    border-radius: 10px;
+    box-shadow: 0 1px 4px 1px white;
+}
+.contacto .row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.contacto .descripcion{
+    color: white;
+    font-size: 1.2rem;
+}
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25rem 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button i{
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: white;
+    color: black;
+}
+
+.contacto button i:hover{
+    color: black;
+}
+
+/* footer*/
+
+footer{
+    min-height: 500px;
+}
+
+.footer-logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white; ;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i{
+    color: black;
+}
+.derechos-de-autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding:  20px;
+}
+/* Adantable (responsivo) */
+@media screen and (max-width: 768px){
+    .navbar-brand{
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 700px){
+    .hero-inferior-imagen{
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 400px){
+    .overlay p{
+        font-size: 18px;
+    }
+    .overlay i{
+        font-size: 40px;
+    }
+}
