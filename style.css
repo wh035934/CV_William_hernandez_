@@ -469,7 +469,20 @@ footer {
     padding: 20px;
 }
 
-/* Adantable (responsivo) */
+#btnArriba {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 999;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  border: none;
+  transition: opacity 0.3s ease;
+   background-color: #0a0a23;
+   color: #1d6fc0;
+}
 @media screen and (max-width: 768px) {
     .navbar-brand {
         display: none;
