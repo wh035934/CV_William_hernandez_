@@ -1,4 +1,3 @@
-/* Modo Oscuro */
 #toggleDarkMode,
 #downloadCV {
     background: none;
@@ -46,6 +45,21 @@ body.dark-mode .seccion-oscura {
     color: #e9efff;
 }
 
+body.dark-mode .proyectos h2 {
+    background-color: #23272f;
+    color: #e9efff;
+}
+
+body.dark-mode .certificados h2 {
+    background-color: #23272f;
+    color: #e9efff;
+}
+
+body.dark-mode .seccion-descripcion {
+    background-color: #23272f;
+    color: #e9efff;
+}
+
 body.dark-mode .seccion-clara {
     background-color: #23272f;
     color: #e9efff;
@@ -58,6 +72,16 @@ body.dark-mode .hero {
 
 body.dark-mode .hero-principal h2 {
     color: #b0b8c9;
+}
+
+body.dark-mode .card-img {
+    background-color: #23272f;
+    color: #e9efff;
+}
+
+body.dark-mode .card {
+    background-color: #23272f;
+    color: #e9efff;
 }
 
 /* Barra de Navegacion */
@@ -345,7 +369,53 @@ h1 {
     color: black;
 }
 
-/* footer*/
+.certificados {
+    padding: 40px;
+}
+
+.certificados img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.certificados-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.modal-content img {
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.custom-close {
+    filter: brightness(0) invert(1);
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 1.5rem;
+}
 
 footer {
     min-height: 500px;
